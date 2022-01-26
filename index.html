@@ -12,22 +12,20 @@
 <body>
     <header>
         <h1 id="title">Developers Survey Form</h1>
-        <p id="description">Thank you for taking the time to help us</p>
+        <p id="description"><i>Thank you for taking the time to help us</i></p>
     </header>
     <form id="survey-form">
         <fieldset>
-            <div class="form-group">
-                <label id="name-label" for="name">Name</label>
+            <div class="form-label">
+                <label id="name-label" for="name">Name:</label>
                 <input id="name" type="text " name="name" class="form-control" placeholder="Enter your name" required>
             </div>
-            <div class="form-group ">
-                <label id="email-label " for="email ">Email</label>
+
+            <div class="form-label ">
+                <label id="email-label " for="email ">Email:</label>
                 <input id="email" type="email" email="email" class="form-control" placeholder="Enter your email" required>
             </div>
-            <div class="form-group ">
-                <label id="number-label " for="number ">Number</label>
-                <input id="number" type="number" number="number" class="form-control" placeholder="Enter your number" min="8" max="12" required>
-            </div>
+           
             <div class="form-group">
                 <p>Which option best describes your current role?</p>
                 <select id="dropdown" name="role">
@@ -39,15 +37,17 @@
                     <option value="other ">Other</option>
                 </select>
             </div>
+
             <div class="form-group">
                 <p>What is your most loved programming language?</p>
                 <label><input type="radio" name="devlang" value="javascript" class="input-radio" checked>JavaScript</label>
                 <label><input type="radio" name="devlang" value="python" class="input-radio">Python</label>
                 <label><input type="radio" name="devlang" value="java" class="input-radio">Java</label>
                 <label><input type="radio" name="devlang" value="php" class="input-radio">PHP</label>
-                <label><input type="radio" name="devlang" value="java" class="input-radio">Java</label>
-                <label><input type="radio" name="devlang" value="c">C#</label>
+                <label><input type="radio" name="devlang" value="java" class="input-radio">C#</label>
+                <label><input type="radio" name="devlang" value="c">Other</label>
             </div>
+
             <div class="form-group">
                 <p>Select which technologies you know or want to learn:</p>
                 <label for="technology1">
@@ -89,11 +89,17 @@
                     <input type="checkbox" name="technology10" value="go" class="input-checkbox">
                     Go
                 </label>
+                <label for="technology10">
+                    <input type="checkbox" name="technology10" value="go" class="input-checkbox">
+                    Other
+                </label>
             </div>
+
             <div class="form-group">
                 <p>Any comments or suggestions?</p>
                 <textarea name="comment " id="comments " cols="30 " rows="10 " placeholder="Enter your comment here... "></textarea>
             </div>
+
             <div class="form-group">
                 <button type="submit" id="submit" class="submit-button">Submit</button>
             </div>
